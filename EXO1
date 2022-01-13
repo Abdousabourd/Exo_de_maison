@@ -1,0 +1,17 @@
+EXO1
+   Algoritme plus_grand_reel; 
+   Var
+   	A, B : réels;
+   Début
+   	Afficher "Entrez deux réels ";
+	Saisir A
+	si A > B Alors
+		Afficher " Le plus grand est",A;
+	FinSi
+	si A < B Alors
+		Afficher " Le plus grand est",B;
+	Finsi
+ si A = B Alors
+		Afficher " Ils sont égaux";
+	FinSi
+   Fin.
