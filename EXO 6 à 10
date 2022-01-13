@@ -1,0 +1,88 @@
+EXO 6
+Algorithme resolution_equation ;
+Var
+	a, b : réels ;
+Début
+	Afficher ‘’ entrez deux réels a et b ‘’ ;
+	Saisir a, b ;
+	Si a <> 0 Alors
+		Afficher ‘’ La solution de l’équation est : ‘’, -a/b ;
+	Sinon si b = 0 Alors
+		Afficher ‘’ La solution de l’équation est : |R ‘’
+	Sinon
+		Afficher ‘’ La solution de l’équation est impossible ‘’ ;
+	Finsi
+Fin.
+EXO 7
+Algorithme plus_grand_nombres ;
+Var
+	A, B, C : entiers ;
+Début 
+	Afficher ‘’ Entrez trois nombres ‘’ ;
+	Saisir A, B, C ;
+	Si A < B ET B < C Alors
+		Afficher ‘’ Le plus grand est ‘’, C ;
+	Sinon si B < C ET C < A Alors
+		Afficher ‘’ Le plus grand est ‘’, A ;
+	Sinon si C < A ET A < B Alors 
+		Afficher ‘’ Le plus grand est ‘’, B ;
+	Sinon
+		Afficher ‘’ Ils sont égaux ‘’ ;
+	Finsi
+Fin.
+
+EXO8
+Algorithme  feu_tricolor ;
+Var 
+	Couleur : chaînes de carctère ;
+Début
+	Affiche ‘’ Choississez une couleur entre  Rouge, Orange, Vert ;
+	Saisir couleur ;
+	Suivant couleur faire
+		‘’ Rouge ‘’ 
+			Afficher ‘’ s’arrêter ‘’ ;
+		‘’ Orange ‘’ 
+			Afficher ‘’ Ralentir ‘’ ;
+		‘’ Vert ‘’ 
+			Afficher ‘’ Passer ‘’ ;
+	Fin suivant
+Fin.
+
+EXO 9 
+Algorithme  operation ;
+Var 
+	A, B, x :  réels ;
+Début
+	Afficher ‘’ Veillez entrez deux nombres ‘’ ;
+	Saisir A, B ;
+	Afficher ‘’ Veillez choisir une opération ‘’ ;
+	Afficher  1 ‘’ – Somme ‘’ ;
+	Afficher 2 ‘’ – Produit ‘’ ;
+	Afficher ‘’ – Moyenne ‘’ ;
+	Saisir operation ;
+	X <— A + B ;
+	Suivant operation faire
+		1
+			Afficher ‘’ La somme est : ‘’, x ;
+		2
+			Afficher ‘’ Le produit est : ‘’, A*B ;
+		3
+			Afficher ‘’ La moyenne est : ‘’, x/2 ;
+	Fin suivant
+Fin.
+
+EXO 10 
+Algorithme  dix_premiers_nombres ;
+Var
+	Som, I, n : entier ;
+Début
+	Afficher ‘’ Entrez un nombre ‘’ ;
+	Saisir n ;
+	Som <— S+I
+	I <— 1
+	Tant_que I <= 10 faire
+		S <— S+I
+		I <— I+1
+	Fin tant_que
+	Afficher ‘’ La somme des 10 premiers entiers est : ‘’, S ;
+Fin.
