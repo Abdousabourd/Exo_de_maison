@@ -1,0 +1,135 @@
+EXO 11 
+Algorithme   message_ecran ;
+Var
+	message : chaîne de caractère ;
+	i : entier ;   
+Début 
+	Afficher ‘’Entrez un nom’’ ;
+	Saisir nom ;
+	Nom <— ‘’ ‘’ ;
+	Tant que nom <> ‘’ZZZZ’’ faire
+		Afficher ‘’ Veillez entrez un nom ‘’ ;
+			i <— i+1
+	fin tan que
+Fin.
+EXO 12
+Algorithme  reponse_question ;
+Var
+	rep : chaîne de caractère ;
+Début 
+	Afficher ‘’ Aimez-vous l’informatique ? O/N ? ‘’ ;
+	Saisir rep ;
+	rep <— ‘’ ‘’ 
+	Tant que rep <> ‘’ O ‘’ ou rep <> ‘’ N ‘’ faire
+		Afficher ‘’ Aimez-vous l’informatique ? O/N ? ‘’ ;
+		Saisir rep ;
+	Fin tant que
+Fin.
+
+EXO 13
+Algorithme  reponse_question ;
+Var
+	rep : chaîne de caractère ;
+Début 
+	Répéter
+		Afficher ‘’ Aimez-vous l’informatique ? O/N ? ‘’ ;
+		Saisir rep ;
+	Jusqu’à rep = ‘’ O ‘’ ou rep ‘’ N’’
+Fin.
+
+EXO 14
+Algorithme somme_des_nombres ;
+Var
+	nbr, s : entiers ;
+Début
+	S <— 0
+	Répéter
+		Afficher ‘’ Entrez un nombre entier ‘’ ;
+		Saisir nbr ;
+		Si nbr >= 0 et nbr <= 99 Alors
+			S <— S + nbr
+		Finsi 
+	Jusqu’à S >= 100 ;
+Fin.
+
+EXO 15
+Algorithme calcul_premiers_norbres ; 
+Var
+	S, i : entiers ;
+Début
+	i <— 1
+	S <— 0
+	Tant que i <= 10 faire
+		S <— S + i
+		i <— i + 1
+	Fin tant que
+	Afficher ‘’ La somme des 10 premiers nombres est : ‘’, S, ‘’. ‘’ ;
+Fin.
+
+EXO 16
+Algorithme table_8 ;
+Var 
+	j : entier ;
+Début
+	Pour j —> 0 à 12 pas 1 faire
+		Afficher ‘’ 8* ‘’, j, ‘’ = ‘’, 8*j ;
+		Afficher ‘’ \ ‘’ ;
+	Fin pour
+Fin.
+
+EXO 17
+Algorithme 10_tables_10 ;
+Var
+	j, k : entiers ;
+Début
+	Répéter
+		j <—1
+		Repeter
+			k <— 0
+			Afficher j, ‘’ * ‘’, k, ‘’ = ‘’, j*k ;
+			k <— k + 1
+		Jusqu’à j >= 12 ;
+		i <— i + 1
+	Jusqu’à i >=10
+Fin.
+
+EXO 18 
+Algorithme  factorielle ;
+Var
+	n, i : entiers ;
+	F : réel ;
+Début
+	Afficher ‘’ Entrez un nombre ‘’ ;
+	Saisir n ;
+	Si n > 0 Alors
+		F <— 1
+		Pour i —> 1 à n pas 1 faire
+			F <— F * i
+		Fin pour
+		Afficher ‘’ n ! = ‘’, F ;
+	Sinon si n = 0 Alors
+		Afficher ‘’ n ! = ‘’, 1 ;
+	Sinon
+		Afficher ‘’ Veillez entrez un nombre ‘’ ;
+	Fin si
+Fin.
+
+EXO 19
+Algorithme PGCD ;
+Var 
+	A, B : entiers ;
+Début
+	Répéter
+		Afficher ‘’ Entrez deux entiers A et B ‘’ ;
+		Saisir A, B ;
+	Jusqu’à A > 0 et B >0
+	Tant que A <> B faire
+		Si A > B Alors
+			A <— A – B
+			Afficher ‘’ PGCD = ‘’, A ;
+		Sinon 
+			B <— B – A
+			Afficher ‘’ PGCD = ‘’, B ;
+		Fin si
+	Fin tant que
+Fin.
